@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.env.linux": {
+    "RUST_BACKTRACE": "1"
+  },
+  "editor.tabSize": 4
+}
