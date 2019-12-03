@@ -29,14 +29,14 @@ pub fn make_contiguous<T>(slice: &mut [T], split: usize) {
     //      [7 8 9 0 1 2 3 4 5 6]
     //       rotate_left(3)
     //      [0 1 2 3 4 5 6 7 8 9]
-    // 
+    //
     // tail smaller
     //                   S
     //      [4 5 6 7 8 9 0 1 2 3]
     //       rotate_right(4)
     //      [0 1 2 3 4 5 6 7 8 9]
-    // 
-    
+    //
+
     // first, figure out whether the tail or head is smaller
     let head_len = split;
     let tail_len = slice.len() - split;
